@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browse PGs — StayHub</title>
+  <meta name="description" content="Browse all 31 verified PGs near VIT Pune. Filter by campus, budget, gender, amenities, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/listings-v3.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <nav class="nav solid" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="#7A9E87"/><path d="M6 15.5L14 7.5L22 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9.5" y="15.5" width="9" height="7" rx="1" stroke="white" stroke-width="2" fill="none"/><rect x="12.5" y="18" width="3" height="4.5" rx="0.5" fill="white"/></svg>
+        <span>StayHub</span>
+      </a>
+      <div class="nav-links">
+        <a href="listings.html" class="nav-link active">Browse PGs</a>
+        <a href="fitscore.html" class="nav-link">AI Match</a>
+        <a href="chat.html" class="nav-link">Community</a>
+      </div>
+      <a href="fitscore.html" class="btn-primary">AI Match →</a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="listings.html">Browse PGs</a>
+      <a href="fitscore.html">AI Match</a>
+      <a href="chat.html">Community</a>
+      <a href="fitscore.html" class="btn-primary" style="justify-content:center">Find My PG →</a>
+    </div>
+  </nav>
+
+  <!-- ─── PAGE HEADER ──────────────────────────────────────── -->
+  <div class="listings-page-header">
+    <div class="container">
+      <span class="label-tag">31 Verified Listings</span>
+      <h1 class="listings-page-title">Browse all PGs</h1>
+      <p class="listings-page-desc">Filter by campus, gender, budget, room type, and more. Or try the <a href="fitscore.html">AI Match</a> for a personalised ranked list.</p>
+    </div>
+  </div>
+
+  <!-- ─── MAIN LAYOUT ──────────────────────────────────────── -->
+  <div class="listings-layout">
+
+    <!-- ─── SIDEBAR ────────────────────────────────────────── -->
+    <aside class="filter-sidebar" id="filterSidebar">
+
+      <div class="filter-sidebar-head">
+        <span class="filter-sidebar-title">Filters</span>
+        <button class="filter-reset-btn" id="filterReset">Reset all</button>
+      </div>
+
+      <div class="filter-divider"></div>
+
+      <!-- Campus -->
+      <div class="filter-group">
+        <div class="filter-group-label">Campus</div>
+        <div class="toggle-group">
+          <button class="toggle-btn active" data-filter="campus" data-val="kondhwa" id="campusKondhwa">Kondhwa</button>
+          <button class="toggle-btn" data-filter="campus" data-val="bibwewadi" id="campusBibwewadi">Bibwewadi</button>
+        </div>
+      </div>
+
+      <div class="filter-divider"></div>
+
+      <!-- Gender -->
+      <div class="filter-group">
+        <div class="filter-group-label">For</div>
+        <div class="toggle-group">
+          <button class="toggle-btn active" data-filter="gender" data-val="">Any</button>
+          <button class="toggle-btn" data-filter="gender" data-val="Female">Girls</button>
+          <button class="toggle-btn" data-filter="gender" data-val="Male">Boys</button>
+        </div>
+      </div>
+
+      <div class="filter-divider"></div>
+
+      <!-- Budget -->
+      <div class="filter-group">
+        <div class="filter-group-label">
+          Max Budget
+          <span class="filter-group-val" id="budgetVal"> — Any</span>
+        </div>
+        <input type="range" class="range-slider" id="budgetSlider" min="3000" max="25000" step="500" value="25000">
+        <div class="range-labels"><span>₹3,000</span><span>₹25,000</span></div>
+      </div>
+
+      <div class="filter-divider"></div>
+
+      <!-- Distance -->
+      <div class="filter-group">
+        <div class="filter-group-label">
+          Max Distance
+          <span class="filter-group-val" id="distVal"> — Any</span>
+        </div>
+        <input type="range" class="range-slider" id="distSlider" min="0.5" max="6" step="0.5" value="6">
+        <div class="range-labels"><span>0.5 km</span><span>6 km</span></div>
+      </div>
+
+      <div class="filter-divider"></div>
+
+      <!-- Features -->
+      <div class="filter-group">
+        <div class="filter-group-label">Features</div>
+        <label class="filter-check-label">
+          <input type="checkbox" id="filterFood"> Food included
+        </label>
+        <label class="filter-check-label">
+          <input type="checkbox" id="filterAC"> Air conditioned
+        </label>
+        <label class="filter-check-label">
+          <input type="checkbox" id="filterNoCurfew"> No curfew
+        </label>
+      </div>
+
+      <div class="filter-divider"></div>
+
+      <!-- Room Type -->
+      <div class="filter-group">
+        <div class="filter-group-label">Room Type</div>
+        <label class="filter-check-label"><input type="checkbox" class="sharing-check" value="single"> Single</label>
+        <label class="filter-check-label"><input type="checkbox" class="sharing-check" value="double"> Double</label>
+        <label class="filter-check-label"><input type="checkbox" class="sharing-check" value="triple"> Triple</label>
+        <label class="filter-check-label"><input type="checkbox" class="sharing-check" value="quadruple"> Quad</label>
+      </div>
+
+      <div class="filter-divider"></div>
+
+      <!-- Sort -->
+      <div class="filter-group">
+        <div class="filter-group-label">Sort by</div>
+        <select class="filter-select" id="sortSelect">
+          <option value="distance">Distance (nearest first)</option>
+          <option value="rent_asc">Rent: Low to High</option>
+          <option value="rent_desc">Rent: High to Low</option>
+          <option value="rating">Rating</option>
+          <option value="safety">Safety Score</option>
+        </select>
+      </div>
+
+      <div class="sidebar-apply-btn">
+        <button class="btn-primary" id="applyFilters" style="width:100%;justify-content:center">Apply Filters</button>
+      </div>
+    </aside>
+
+    <!-- ─── RESULTS ─────────────────────────────────────────── -->
+    <main class="listings-main">
+
+      <!-- Mobile filter toggle -->
+      <button class="mobile-filter-btn" id="mobileFilterToggle">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+        Filters
+      </button>
+
+      <!-- Toolbar -->
+      <div class="results-toolbar">
+        <div>
+          <span class="results-count" id="resultsCount">Loading…</span>
+          <span class="live-badge" style="margin-left:12px">
+            <span class="live-dot"></span>
+            <span id="viewerCount">8</span> students browsing
+          </span>
+        </div>
+        <div class="toolbar-right">
+          <div class="toolbar-search">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <input type="text" id="searchInput" placeholder="Search name, area, amenity…">
+          </div>
+          <div class="view-toggle">
+            <button class="view-toggle-btn active" id="viewGrid">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+              Grid
+            </button>
+            <button class="view-toggle-btn" id="viewMap">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/></svg>
+              Map
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PG Grid -->
+      <div class="pg-grid" id="pgGrid">
+        <!-- Skeletons -->
+        <div class="skeleton-card"><div class="sk-img"></div><div class="sk-body"><div class="sk-line w-80"></div><div class="sk-line w-60"></div><div class="sk-line w-40"></div></div></div>
+        <div class="skeleton-card"><div class="sk-img"></div><div class="sk-body"><div class="sk-line w-80"></div><div class="sk-line w-60"></div><div class="sk-line w-40"></div></div></div>
+        <div class="skeleton-card"><div class="sk-img"></div><div class="sk-body"><div class="sk-line w-80"></div><div class="sk-line w-60"></div><div class="sk-line w-40"></div></div></div>
+        <div class="skeleton-card"><div class="sk-img"></div><div class="sk-body"><div class="sk-line w-80"></div><div class="sk-line w-60"></div><div class="sk-line w-40"></div></div></div>
+      </div>
+
+      <!-- Map View -->
+      <div class="map-container" id="mapViewContainer">
+        <div id="map"></div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination" id="pagination"></div>
+    </main>
+  </div>
+
+  <!-- ─── COMPARE BAR (sticky bottom) ──────────────────────── -->
+  <div class="compare-bar" id="compareBar">
+    <div class="compare-bar-inner">
+      <div class="compare-bar-items" id="compareBarItems"></div>
+      <div class="compare-bar-actions">
+        <span class="compare-count-text"><span id="compareCount">0</span>/3 selected</span>
+        <button class="btn-accent" id="compareNowBtn" disabled>Compare Now</button>
+        <button class="btn-ghost" id="compareClearBtn" style="border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.6)">Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── DRAWER OVERLAY ────────────────────────────────────── -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- ─── COMPARISON DRAWER ────────────────────────────────── -->
+  <div class="compare-drawer" id="compareDrawer">
+    <div class="drawer-handle"></div>
+    <div class="drawer-header">
+      <span class="drawer-title">Side-by-Side Comparison</span>
+      <button class="drawer-close" id="drawerClose">✕</button>
+    </div>
+    <div id="comparisonContent"></div>
+  </div>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer" style="margin-top:80px">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="#7A9E87"/><path d="M6 15.5L14 7.5L22 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9.5" y="15.5" width="9" height="7" rx="1" stroke="white" stroke-width="2" fill="none"/><rect x="12.5" y="18" width="3" height="4.5" rx="0.5" fill="white"/></svg>
+          <span>StayHub</span>
+        </a>
+        <p class="footer-tagline">Intelligent PG finder for VIT Pune students.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-col-title">Explore</div>
+          <a href="listings.html">All Listings</a>
+          <a href="fitscore.html">AI Matcher</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 StayHub</span>
+      <span>Powered by ROC + Dijkstra</span>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="js/api.js"></script>
+  <script src="js/listings.js"></script>
+
+  <script>
+    // ── Nav ─────────────────────────────────────────────────
+    document.getElementById('navHamburger').addEventListener('click', () =>
+      document.getElementById('navMobile').classList.toggle('open')
+    );
+
+    // ── Mobile filter toggle ─────────────────────────────────
+    document.getElementById('mobileFilterToggle').addEventListener('click', () => {
+      document.getElementById('filterSidebar').classList.toggle('open');
+    });
+
+    // ── Budget slider ────────────────────────────────────────
+    const budgetSlider = document.getElementById('budgetSlider');
+    const budgetVal = document.getElementById('budgetVal');
+    budgetSlider.addEventListener('input', () => {
+      const v = parseInt(budgetSlider.value);
+      budgetVal.textContent = v >= 25000 ? ' — Any' : ` — ₹${v.toLocaleString('en-IN')}`;
+    });
+
+    // ── Distance slider ──────────────────────────────────────
+    const distSlider = document.getElementById('distSlider');
+    const distVal = document.getElementById('distVal');
+    distSlider.addEventListener('input', () => {
+      const v = parseFloat(distSlider.value);
+      distVal.textContent = v >= 6 ? ' — Any' : ` — ${v} km`;
+    });
+
+    // ── Campus toggle (single select) ─────────────────────────
+    document.querySelectorAll('[data-filter="campus"]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-filter="campus"]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // ── Gender toggle (single select) ────────────────────────
+    document.querySelectorAll('[data-filter="gender"]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-filter="gender"]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // ── View toggle ──────────────────────────────────────────
+    document.getElementById('viewGrid').addEventListener('click', () => {
+      document.getElementById('viewGrid').classList.add('active');
+      document.getElementById('viewMap').classList.remove('active');
+      document.getElementById('pgGrid').style.display = '';
+      document.getElementById('mapViewContainer').classList.remove('active');
+    });
+    document.getElementById('viewMap').addEventListener('click', () => {
+      document.getElementById('viewMap').classList.add('active');
+      document.getElementById('viewGrid').classList.remove('active');
+      document.getElementById('pgGrid').style.display = 'none';
+      document.getElementById('mapViewContainer').classList.add('active');
+    });
+
+    // ── Comparison drawer ─────────────────────────────────────
+    function openCompareDrawer() {
+      document.getElementById('compareDrawer').classList.add('open');
+      document.getElementById('drawerOverlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeCompareDrawer() {
+      document.getElementById('compareDrawer').classList.remove('open');
+      document.getElementById('drawerOverlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('drawerClose').addEventListener('click', closeCompareDrawer);
+    document.getElementById('drawerOverlay').addEventListener('click', closeCompareDrawer);
+
+    // ── Compare now ───────────────────────────────────────────
+    document.getElementById('compareNowBtn').addEventListener('click', () => {
+      if (typeof renderComparison === 'function') renderComparison();
+      openCompareDrawer();
+    });
+    document.getElementById('compareClearBtn').addEventListener('click', () => {
+      if (typeof clearComparison === 'function') clearComparison();
+    });
+
+    // ── Compare bar visibility ────────────────────────────────
+    window.updateCompareBar = function(count) {
+      const bar = document.getElementById('compareBar');
+      if (count > 0) bar.classList.add('visible');
+      else bar.classList.remove('visible');
+      document.getElementById('compareCount').textContent = count;
+      document.getElementById('compareNowBtn').disabled = count < 2;
+    };
+
+    // ── Live viewer count ─────────────────────────────────────
+    setInterval(() => {
+      const el = document.getElementById('viewerCount');
+      if (el) el.textContent = Math.floor(Math.random() * 8) + 5;
+    }, 8000);
+
+    // ── Reset filters ─────────────────────────────────────────
+    document.getElementById('filterReset').addEventListener('click', () => {
+      budgetSlider.value = 25000; budgetVal.textContent = ' — Any';
+      distSlider.value = 6; distVal.textContent = ' — Any';
+      document.querySelectorAll('[data-filter="campus"]').forEach(b => b.classList.toggle('active', b.dataset.val === 'kondhwa'));
+      document.querySelectorAll('[data-filter="gender"]').forEach(b => b.classList.toggle('active', b.dataset.val === ''));
+      document.querySelectorAll('.sharing-check').forEach(c => c.checked = false);
+      document.getElementById('filterFood').checked = false;
+      document.getElementById('filterAC').checked = false;
+      document.getElementById('filterNoCurfew').checked = false;
+      document.getElementById('searchInput').value = '';
+      if (typeof applyFilters === 'function') applyFilters();
+    });
+
+    // ── URL params on load ────────────────────────────────────
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('campus') === 'bibwewadi') {
+      document.querySelectorAll('[data-filter="campus"]').forEach(b => b.classList.toggle('active', b.dataset.val === 'bibwewadi'));
+    }
+    if (params.get('budget')) {
+      const b = Math.min(parseInt(params.get('budget')) || 25000, 25000);
+      budgetSlider.value = b;
+      budgetVal.textContent = b >= 25000 ? ' — Any' : ` — ₹${b.toLocaleString('en-IN')}`;
+    }
+  </script>
+  <script src="js/hostel-images.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PG Detail — StayHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/pg-detail.css">
+  <!-- Leaflet Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="#7A9E87"/><path d="M6 15.5L14 7.5L22 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9.5" y="15.5" width="9" height="7" rx="1" stroke="white" stroke-width="2" fill="none"/><rect x="12.5" y="18" width="3" height="4.5" rx="0.5" fill="white"/></svg>
+        <span class="logo-text">StayHub</span>
+      </a>
+      <div class="nav-links">
+        <a href="listings.html" class="nav-link">Browse PGs</a>
+        <a href="fitscore.html" class="nav-link">AI Match</a>
+        <a href="index.html#how-it-works" class="nav-link">How it works</a>
+        <a href="chat.html" class="nav-link nav-link-chat">💬 Community</a>
+      </div>
+      <a href="fitscore.html" class="btn btn-primary btn-sm">Find My PG →</a>
+      <button class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="listings.html">Browse PGs</a>
+      <a href="fitscore.html">AI Match</a>
+      <a href="chat.html">Community</a>
+      <a href="fitscore.html" class="btn btn-primary">Find My PG →</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <div class="breadcrumb-inner">
+      <a href="listings.html" class="bc-link">← Back to listings</a>
+      <div class="bc-campus-switch">
+        <span class="bc-label">Campus:</span>
+        <button class="bc-campus-btn active" data-campus="kondhwa">Kondhwa</button>
+        <button class="bc-campus-btn" data-campus="bibwewadi">Bibwewadi</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading state -->
+  <div id="pageLoading" style="padding:120px 0">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Main content (hidden until loaded) -->
+  <div id="pageContent" class="hidden">
+
+    <!-- HERO SECTION -->
+    <div class="pg-hero">
+      <div class="pg-hero-inner">
+        <div class="pg-hero-left">
+          <div class="pg-hero-tags" id="pgHeroTags"></div>
+          <h1 class="pg-name" id="pgName">Loading...</h1>
+          <div class="pg-area" id="pgArea"></div>
+
+          <!-- Quick stats row -->
+          <div class="pg-quick-stats" id="pgQuickStats"></div>
+        </div>
+        <div class="pg-hero-right">
+          <div class="pg-score-card" id="pgScoreCard"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DETAIL GRID -->
+    <div class="pg-detail-layout">
+      <div class="pg-detail-main">
+
+        <!-- Overview -->
+        <section class="pg-section" id="sectionOverview">
+          <h2 class="pg-section-title">Overview</h2>
+          <div class="overview-grid" id="overviewGrid"></div>
+        </section>
+
+        <!-- Amenities -->
+        <section class="pg-section" id="sectionAmenities">
+          <h2 class="pg-section-title">Amenities</h2>
+          <div class="amenities-grid" id="amenitiesGrid"></div>
+        </section>
+
+        <!-- Weekly Food Menu -->
+        <section class="pg-section" id="sectionFoodMenu">
+          <h2 class="pg-section-title">Weekly Food Menu</h2>
+          <div class="food-menu-calendar" id="foodMenuCalendar">
+            <!-- Rendered via JS -->
+          </div>
+        </section>
+
+        <!-- Location & Map -->
+        <section class="pg-section" id="sectionLocation">
+          <h2 class="pg-section-title">Location & Landmarks</h2>
+          <div class="pg-map-container">
+            <div id="pgDetailMap" style="height: 350px; border-radius: 16px; border: 1px solid var(--border);"></div>
+          </div>
+        </section>
+
+        <!-- Scoring breakdown -->
+        <section class="pg-section" id="sectionScores">
+          <h2 class="pg-section-title">Score Breakdown</h2>
+          <div class="scores-grid" id="scoresGrid"></div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="pg-section" id="sectionReviews">
+          <h2 class="pg-section-title">
+            Resident Reviews
+            <span class="pg-section-badge" id="reviewCountBadge">0</span>
+          </h2>
+          <div id="reviewsContent">
+            <div class="spinner"></div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="pg-detail-sidebar">
+        <div class="pg-sidebar-card" id="pgContactCard">
+          <div class="sidebar-card-title">Contact &amp; Details</div>
+          <div id="contactInfo"></div>
+          <a href="fitscore.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:16px">
+            Find Similar PGs →
+          </a>
+        </div>
+
+        <!-- Nearby graph data -->
+        <div class="pg-sidebar-card" id="pgGraphCard">
+          <div class="sidebar-card-title">Proximity (Dijkstra)</div>
+          <div class="graph-distances" id="graphDistances">
+            <div class="spinner" style="margin:16px auto"></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <!-- Error state -->
+  <div id="pageError" class="hidden" style="padding:120px 20px">
+    <div class="empty-state">
+      <div class="empty-state-icon">😕</div>
+      <h3>PG not found</h3>
+      <p id="pageErrorMsg">This listing may have been removed.</p>
+      <a href="listings.html" class="btn btn-primary" style="margin-top:20px">Browse all PGs</a>
+    </div>
+  </div>
+
+  <footer class="footer" style="margin-top:80px">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="#7A9E87"/><path d="M6 15.5L14 7.5L22 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9.5" y="15.5" width="9" height="7" rx="1" stroke="white" stroke-width="2" fill="none"/><rect x="12.5" y="18" width="3" height="4.5" rx="0.5" fill="white"/></svg><span class="logo-text">StayHub</span>
+        </a>
+        <p class="footer-tagline">Intelligent PG finder for VIT Pune students.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 StayHub</span>
+      <span class="footer-algo">Powered by ROC + Dijkstra algorithms</span>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/pg-detail.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/hostel-images.js"></script>
+</body>
+</html>

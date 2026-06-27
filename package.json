@@ -1,0 +1,21 @@
+{
+  "name": "stayhub-vlive-backend",
+  "version": "2.0.0",
+  "description": "StayHub + VLIVE integrated backend — PG API + Chat server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "chat": "node chat-server.js",
+    "dev": "nodemon index.js",
+    "dev:chat": "nodemon chat-server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": { "node": ">=16" }
+}

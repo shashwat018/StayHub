@@ -1,0 +1,2588 @@
+[
+  {
+    "id": 1,
+    "name": "Stanza Living: Austin House",
+    "area": "Somji, near D-Mart",
+    "distance_kondhwa": 1.1,
+    "distance_bibwewadi": 3.54,
+    "rent_min": 13599,
+    "rent_max": 13599,
+    "deposit": 10000,
+    "sharing_types": [
+      "single",
+      "double"
+    ],
+    "gender": "any",
+    "food": true,
+    "wifi_speed": 10,
+    "ac": false,
+    "curfew": "no_curfew",
+    "amenities": [
+      "Attached Washroom",
+      "Spacious Cupboard",
+      "Hot and Delicious Meals",
+      "High-Speed WIFI",
+      "Laundry Service",
+      "Professional Housekeeping",
+      "Spacious Refrigerator",
+      "Washing Machine",
+      "24x7 Security Surveillance",
+      "Water Purifier",
+      "Flat Screen Television"
+    ],
+    "source": "https://www.stanzaliving.com/pune/pg-in-kondhwa/co_ed/austin-house",
+    "contact": "81938 16585",
+    "cctv": true,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Stanza%20Living%20Austin%20House/WhatsApp%20Image%202026-05-16%20at%2020.29.13%20%281%29.jpeg",
+      "/hostel_images/Stanza%20Living%20Austin%20House/WhatsApp%20Image%202026-05-16%20at%2020.29.13.jpeg",
+      "/hostel_images/Stanza%20Living%20Austin%20House/WhatsApp%20Image%202026-05-16%20at%2020.29.14%20%281%29.jpeg",
+      "/hostel_images/Stanza%20Living%20Austin%20House/WhatsApp%20Image%202026-05-16%20at%2020.29.14.jpeg",
+      "/hostel_images/Stanza%20Living%20Austin%20House/WhatsApp%20Image%202026-05-16%20at%2020.29.16.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.454644837383697,
+    "lng": 73.88872002113098,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "Casa Living: Iris House",
+    "area": "Betal Nagar",
+    "distance_kondhwa": 0.65,
+    "distance_bibwewadi": 2.89,
+    "rent_min": 6500,
+    "rent_max": 9000,
+    "deposit": null,
+    "sharing_types": [
+      "double",
+      "triple"
+    ],
+    "gender": "any",
+    "food": "optional",
+    "wifi_speed": 10,
+    "ac": false,
+    "curfew": "10:00 PM",
+    "amenities": [
+      "Furnished Rooms",
+      "Laundry Services",
+      "Housekeeping",
+      "High-Speed Wi-Fi",
+      "Modern Kitchen Appliances",
+      "Gaming & Entertainment Zone",
+      "Full CCTV Surveillance",
+      "24×7 Security & Residential Manager"
+    ],
+    "source": "https://thecasaliving.com/house/5/",
+    "contact": "70306 28787",
+    "cctv": true,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Casa%20Living%2C%20Iris%20House/unnamed%20%281%29.webp",
+      "/hostel_images/Casa%20Living%2C%20Iris%20House/unnamed%20%282%29.webp",
+      "/hostel_images/Casa%20Living%2C%20Iris%20House/unnamed%20%283%29.webp",
+      "/hostel_images/Casa%20Living%2C%20Iris%20House/unnamed.webp"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.451586565381415,
+    "lng": 73.88270508134225,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "Stanza Living: Juliaca House",
+    "area": "Yewalewadi,Kondhwa",
+    "distance_kondhwa": 3,
+    "distance_bibwewadi": 5.5,
+    "rent_min": 8799,
+    "rent_max": 8799,
+    "deposit": 13,
+    "sharing_types": [
+      "double",
+      "triple"
+    ],
+    "gender": "male",
+    "food": true,
+    "wifi_speed": 10,
+    "ac": false,
+    "curfew": "no_curfew",
+    "amenities": [
+      "Attached Washroom",
+      "Spacious Cupboard",
+      "Hot & Delicious Meals",
+      "High-Speed Wi-Fi",
+      "Laundry Service",
+      "Professional Housekeeping",
+      "Spacious Refrigerator",
+      "Washing Machine",
+      "24×7 Security Surveillance",
+      "Water Purifier",
+      "Flat Screen Television"
+    ],
+    "source": "https://www.stanzaliving.com/pune/pg-in-kondhwa/male/juliaca-house",
+    "contact": "93550 03787",
+    "cctv": true,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.463363485614682,
+    "lng": 73.88344751512216,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "My Happy Home A",
+    "area": "Mallik Nagar",
+    "distance_kondhwa": 1.2,
+    "distance_bibwewadi": 2.25,
+    "rent_min": 10800,
+    "rent_max": 12100,
+    "deposit": 5000,
+    "sharing_types": [
+      "triple",
+      "quadruple"
+    ],
+    "gender": "male",
+    "food": true,
+    "wifi_speed": null,
+    "ac": false,
+    "curfew": "10:00 PM",
+    "amenities": [],
+    "source": "",
+    "contact": "Mb. : 8431352604 , 8208553910)",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/My%20Happy%20Home%20A/WhatsApp%20Image%202026-05-16%20at%2020.40.51%20%281%29.jpeg",
+      "/hostel_images/My%20Happy%20Home%20A/WhatsApp%20Image%202026-05-16%20at%2020.40.51%20%282%29.jpeg",
+      "/hostel_images/My%20Happy%20Home%20A/WhatsApp%20Image%202026-05-16%20at%2020.40.51%20%283%29.jpeg",
+      "/hostel_images/My%20Happy%20Home%20A/WhatsApp%20Image%202026-05-16%20at%2020.40.51.jpeg",
+      "/hostel_images/My%20Happy%20Home%20A/WhatsApp%20Image%202026-05-16%20at%2020.40.52.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.457637814049896,
+    "lng": 73.8785199299541,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "Studious Girls Hostel",
+    "area": "Kondhwa",
+    "distance_kondhwa": 0.85,
+    "distance_bibwewadi": 2.9,
+    "rent_min": 7500,
+    "rent_max": 8300,
+    "deposit": 2000,
+    "sharing_types": [
+      "double",
+      "triple"
+    ],
+    "gender": "female",
+    "food": false,
+    "wifi_speed": null,
+    "ac": false,
+    "curfew": "9:30 PM",
+    "amenities": [
+      "Study Lobby",
+      "Dining Area",
+      "Pure Veg Mess",
+      "Carrom",
+      "Foosball",
+      "Table Tennis",
+      "Wi-Fi",
+      "Washing Machine",
+      "Fire Extinguisher",
+      "Lady Guard",
+      "CCTV Surveillance",
+      "Solar Water",
+      "Generator Backup",
+      "Housekeeping"
+    ],
+    "source": "https://studioushostelpune.com/",
+    "contact": "7277272244",
+    "cctv": true,
+    "power_backup": true,
+    "biometric": false,
+    "study_room": true,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Studious%20Girls%20Hostel/unnamed%20%281%29.webp",
+      "/hostel_images/Studious%20Girls%20Hostel/unnamed%20%282%29.webp",
+      "/hostel_images/Studious%20Girls%20Hostel/unnamed%20%283%29.webp",
+      "/hostel_images/Studious%20Girls%20Hostel/unnamed%20%284%29.webp",
+      "/hostel_images/Studious%20Girls%20Hostel/unnamed%20%285%29.webp",
+      "/hostel_images/Studious%20Girls%20Hostel/unnamed%20%286%29.webp",
+      "/hostel_images/Studious%20Girls%20Hostel/unnamed%20%287%29.webp",
+      "/hostel_images/Studious%20Girls%20Hostel/unnamed.webp"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.458051208069218,
+    "lng": 73.87170670777415,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": "Swami Krupa Boys Hostel",
+    "area": "Hagawane Nagar Rd",
+    "distance_kondhwa": 0.8,
+    "distance_bibwewadi": 2.9,
+    "rent_min": 10800,
+    "rent_max": 10800,
+    "deposit": 65000,
+    "sharing_types": [
+      "double"
+    ],
+    "gender": "male",
+    "food": true,
+    "wifi_speed": 70,
+    "ac": false,
+    "curfew": "11:00 PM",
+    "amenities": [
+      "Mess Facility",
+      "Washing Machines (2)",
+      "Personal Cupboard",
+      "High-Speed WiFi",
+      "24/7 Security Surveillance",
+      "Water Purifier",
+      "Refrigerator for Drinks",
+      "Table Tennis & Indoor Games",
+      "Geyser",
+      "Study Table"
+    ],
+    "source": "Friend",
+    "contact": "",
+    "cctv": true,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": true,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.451965769343076,
+    "lng": 73.88036373503819,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": "Homies' Living Sapphire",
+    "area": "Betal Nagar",
+    "distance_kondhwa": 0.3,
+    "distance_bibwewadi": null,
+    "rent_min": 5830,
+    "rent_max": 7500,
+    "deposit": 10000,
+    "sharing_types": [
+      "double"
+    ],
+    "gender": "male",
+    "food": "optional",
+    "wifi_speed": null,
+    "ac": false,
+    "curfew": "10:30: PM",
+    "amenities": [
+      "High-speed wifi",
+      "CCTV",
+      "24/7 Security guard",
+      "Common fridge",
+      "Common hangout area",
+      "Common TV",
+      "Common Washing machine",
+      "Common terrace",
+      "Kitchen",
+      "Parking",
+      "Power Backup",
+      "Central Wi-Fi",
+      "Indoor Games",
+      "Electricity Backup"
+    ],
+    "source": "Friend",
+    "contact": "95116 90732",
+    "cctv": true,
+    "power_backup": true,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Homies%27%20Living%20Sapphire/WhatsApp%20Image%202026-05-17%20at%2010.22.44%20%281%29.jpeg",
+      "/hostel_images/Homies%27%20Living%20Sapphire/WhatsApp%20Image%202026-05-17%20at%2010.22.44%20%282%29.jpeg",
+      "/hostel_images/Homies%27%20Living%20Sapphire/WhatsApp%20Image%202026-05-17%20at%2010.22.44%20%283%29.jpeg",
+      "/hostel_images/Homies%27%20Living%20Sapphire/WhatsApp%20Image%202026-05-17%20at%2010.22.44.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.459115021015855,
+    "lng": 73.88959668646442,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": "Sharvil Bungalow",
+    "area": "Yashodhan society lane",
+    "distance_kondhwa": 0.75,
+    "distance_bibwewadi": 2.8,
+    "rent_min": 6250,
+    "rent_max": 6250,
+    "deposit": 5000,
+    "sharing_types": [
+      "double",
+      "triple",
+      "quadruple"
+    ],
+    "gender": "any",
+    "food": false,
+    "wifi_speed": null,
+    "ac": false,
+    "curfew": "9:30 PM",
+    "amenities": [
+      "Washing Machine",
+      "Hot & Cold Water Filter",
+      "Geyser",
+      "Wi-Fi",
+      "Induction Cooktop",
+      "Power Backup"
+    ],
+    "source": "Friend",
+    "contact": "",
+    "cctv": false,
+    "power_backup": true,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.464465935745533,
+    "lng": 73.87650673405001,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": "Alchemy Living",
+    "area": "Kapil Nagar, Kondhwa",
+    "distance_kondhwa": 0.95,
+    "distance_bibwewadi": 3,
+    "rent_min": 10000,
+    "rent_max": 10000,
+    "deposit": 10000,
+    "sharing_types": [
+      "single"
+    ],
+    "gender": "male",
+    "food": true,
+    "wifi_speed": null,
+    "ac": false,
+    "curfew": "11:30 PM",
+    "amenities": [
+      "Laundry"
+    ],
+    "source": "Friend",
+    "contact": "",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.46772949465146,
+    "lng": 73.87106729682594,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": "Shree Gajanan Boys Hostel",
+    "area": "Shatrunjay Nagar",
+    "distance_kondhwa": 1.4,
+    "distance_bibwewadi": 2.4,
+    "rent_min": 11200,
+    "rent_max": 11200,
+    "deposit": 10000,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "male",
+    "food": true,
+    "wifi_speed": 36,
+    "ac": false,
+    "curfew": "10:30 PM",
+    "amenities": [
+      "Washing Machine",
+      "Induction Cooktop",
+      "Electric Kettle",
+      "Iron"
+    ],
+    "source": "Friend",
+    "contact": "80871 06227",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Shree%20Gajanan%20Boys%20Hostel/unnamed%20%282%29.jpg",
+      "/hostel_images/Shree%20Gajanan%20Boys%20Hostel/unnamed%20%288%29.webp"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.453711311228986,
+    "lng": 73.88914953909077,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "name": "Aashirwad Hostel",
+    "area": "Upper Indira Nagar",
+    "distance_kondhwa": 3.5,
+    "distance_bibwewadi": 0.9,
+    "rent_min": 5420,
+    "rent_max": 5420,
+    "deposit": 2000,
+    "sharing_types": [
+      "single",
+      "double",
+      "triple"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 245,
+    "ac": false,
+    "curfew": "10:00 PM",
+    "amenities": [
+      "Attached Washroom",
+      "Spacious Cupboard",
+      "Hot and Delicious Meals",
+      "High-Speed Wi-Fi",
+      "Professional Housekeeping",
+      "Washing Machine",
+      "24×7 Security Surveillance",
+      "Water Purifier"
+    ],
+    "source": "Friend",
+    "contact": "",
+    "cctv": true,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Aashirwad%20Hostel/WhatsApp%20Image%202026-05-17%20at%2010.34.53%20%281%29.jpeg",
+      "/hostel_images/Aashirwad%20Hostel/WhatsApp%20Image%202026-05-17%20at%2010.34.53%20%282%29.jpeg",
+      "/hostel_images/Aashirwad%20Hostel/WhatsApp%20Image%202026-05-17%20at%2010.34.53.jpeg",
+      "/hostel_images/Aashirwad%20Hostel/WhatsApp%20Image%202026-05-17%20at%2010.34.54.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.454703218701177,
+    "lng": 73.88363325454002,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "name": "Supra PG",
+    "area": "Sainagar , kondhwa",
+    "distance_kondhwa": 1,
+    "distance_bibwewadi": 2.1,
+    "rent_min": 6000,
+    "rent_max": 6000,
+    "deposit": 2000,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 30,
+    "ac": false,
+    "curfew": "10:00 PM",
+    "amenities": [],
+    "source": "Friend",
+    "contact": "9800324212",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.46589707696611,
+    "lng": 73.88016472555584,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 13,
+    "name": "Jotirling Hostel",
+    "area": "Sainagar , kondhwa",
+    "distance_kondhwa": 1.2,
+    "distance_bibwewadi": 2.5,
+    "rent_min": 5000,
+    "rent_max": 5000,
+    "deposit": 2000,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 65,
+    "ac": false,
+    "curfew": "10:30 PM",
+    "amenities": [
+      "Hot and Cold Water",
+      "High Speed Wi-Fi"
+    ],
+    "source": "Friend",
+    "contact": "9822349676",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.462533979202245,
+    "lng": 73.88073855559344,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 14,
+    "name": "Shreeram Flat",
+    "area": "sainagar , kondhwa",
+    "distance_kondhwa": 1.3,
+    "distance_bibwewadi": 2.3,
+    "rent_min": 18000,
+    "rent_max": 18000,
+    "deposit": 4000,
+    "sharing_types": [
+      "six"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 42,
+    "ac": false,
+    "curfew": "11:00 PM",
+    "amenities": [],
+    "source": "Friend",
+    "contact": "8308605513",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.468113467234705,
+    "lng": 73.88477829176495,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 15,
+    "name": "Nikhil Boys Hostel",
+    "area": "sukhasagar nagar, kondhawa",
+    "distance_kondhwa": 1.2,
+    "distance_bibwewadi": 2.3,
+    "rent_min": 8000,
+    "rent_max": 8000,
+    "deposit": null,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "male",
+    "food": true,
+    "wifi_speed": 50,
+    "ac": false,
+    "curfew": "11:00 PM",
+    "amenities": [
+      "Washing Machine",
+      "Hot and Cold  water"
+    ],
+    "source": "Friend",
+    "contact": "9637824468",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Nikhil%20boys%20hostel/2025-07-26%20%281%29.webp",
+      "/hostel_images/Nikhil%20boys%20hostel/2025-07-26%20%282%29.webp",
+      "/hostel_images/Nikhil%20boys%20hostel/2025-07-26%20%283%29.webp",
+      "/hostel_images/Nikhil%20boys%20hostel/2025-07-26%20%284%29.webp",
+      "/hostel_images/Nikhil%20boys%20hostel/2025-07-26%20%285%29.webp",
+      "/hostel_images/Nikhil%20boys%20hostel/2025-07-26%20%286%29.webp",
+      "/hostel_images/Nikhil%20boys%20hostel/2025-07-26.webp",
+      "/hostel_images/Nikhil%20boys%20hostel/2025-08-05.webp",
+      "/hostel_images/Nikhil%20boys%20hostel/2025-08-26%20%281%29.webp",
+      "/hostel_images/Nikhil%20boys%20hostel/2025-08-26.webp"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.463587732232405,
+    "lng": 73.8746688107683,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 16,
+    "name": "Suprabhat Flat",
+    "area": "sainagar , kondhwa",
+    "distance_kondhwa": 1,
+    "distance_bibwewadi": 1.5,
+    "rent_min": 14000,
+    "rent_max": 14000,
+    "deposit": 30000,
+    "sharing_types": [
+      "four"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": null,
+    "ac": false,
+    "curfew": "10:00 PM",
+    "amenities": [],
+    "source": "",
+    "contact": "8010184562",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Suprabhat%20Flat/WhatsApp%20Image%202026-05-17%20at%2010.48.54.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.464774985715646,
+    "lng": 73.88159577148679,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 17,
+    "name": "Standard Living",
+    "area": "Ambedkar  Nagar",
+    "distance_kondhwa": 0.8,
+    "distance_bibwewadi": 3.3,
+    "rent_min": 9000,
+    "rent_max": 9000,
+    "deposit": 10000,
+    "sharing_types": [
+      "double"
+    ],
+    "gender": "male",
+    "food": true,
+    "wifi_speed": 15,
+    "ac": false,
+    "curfew": "11:00 PM",
+    "amenities": [
+      "Mess Facility",
+      "Washing Machines (2)",
+      "Personal Cupboard",
+      "High-Speed WiFi",
+      "24/7 Security Surveillance",
+      "Water Purifier",
+      "Refrigerator for Drinks",
+      "Geyser",
+      "Study Table"
+    ],
+    "source": "Friend",
+    "contact": "7355154113",
+    "cctv": true,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": true,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Standard%20living/WhatsApp%20Image%202026-05-17%20at%2010.55.08.jpeg",
+      "/hostel_images/Standard%20living/WhatsApp%20Image%202026-05-17%20at%2010.55.09%20%281%29.jpeg",
+      "/hostel_images/Standard%20living/WhatsApp%20Image%202026-05-17%20at%2010.55.09%20%282%29.jpeg",
+      "/hostel_images/Standard%20living/WhatsApp%20Image%202026-05-17%20at%2010.55.09.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.451083960874687,
+    "lng": 73.87285264906652,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 18,
+    "name": "Vishwa Girls Hostel",
+    "area": "Ashrafh nagar",
+    "distance_kondhwa": 0.5,
+    "distance_bibwewadi": 2.5,
+    "rent_min": 9100,
+    "rent_max": 9100,
+    "deposit": 5000,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "female",
+    "food": true,
+    "wifi_speed": 72,
+    "ac": false,
+    "curfew": "09:00: PM",
+    "amenities": [
+      "Washing Machine",
+      "Induction Cooktop",
+      "Electric Kettle",
+      "Iron"
+    ],
+    "source": "Friend",
+    "contact": "",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Vishwa%20Girls%20Hostel/WhatsApp%20Image%202026-05-17%20at%2010.59.57%20%281%29.jpeg",
+      "/hostel_images/Vishwa%20Girls%20Hostel/WhatsApp%20Image%202026-05-17%20at%2010.59.57%20%282%29.jpeg",
+      "/hostel_images/Vishwa%20Girls%20Hostel/WhatsApp%20Image%202026-05-17%20at%2010.59.57%20%283%29.jpeg",
+      "/hostel_images/Vishwa%20Girls%20Hostel/WhatsApp%20Image%202026-05-17%20at%2010.59.57.jpeg",
+      "/hostel_images/Vishwa%20Girls%20Hostel/WhatsApp%20Image%202026-05-17%20at%2010.59.58.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.45293955815011,
+    "lng": 73.87491169512262,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 19,
+    "name": "Diving Living Hostel",
+    "area": "Fornted of vit near panchtirth socitey",
+    "distance_kondhwa": 0.7,
+    "distance_bibwewadi": 1.5,
+    "rent_min": 7000,
+    "rent_max": 7000,
+    "deposit": 2000,
+    "sharing_types": [
+      "double"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 40,
+    "ac": false,
+    "curfew": "12:00: PM",
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "washing Machine",
+      "Induction Cooktop",
+      "Electric Kettle",
+      "Iron"
+    ],
+    "source": "Friend",
+    "contact": "7776906908",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.458341537581127,
+    "lng": 73.88881626044174,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 20,
+    "name": "Prabhukunj Hostel",
+    "area": "Laxmi nagar kondhawa",
+    "distance_kondhwa": 0.9,
+    "distance_bibwewadi": 2.3,
+    "rent_min": 4000,
+    "rent_max": 4000,
+    "deposit": 6000,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 60,
+    "ac": false,
+    "curfew": "11:00: PM",
+    "amenities": [
+      "Induction Cooktop",
+      "Electric Kettle",
+      "Iron"
+    ],
+    "source": "Friend",
+    "contact": "9356759029",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.45596976718361,
+    "lng": 73.88839816890481,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 21,
+    "name": "Audumber Boys Hostel",
+    "area": "Ambedkar  Nagar",
+    "distance_kondhwa": 1,
+    "distance_bibwewadi": 2.5,
+    "rent_min": 4000,
+    "rent_max": 4000,
+    "deposit": 10000,
+    "sharing_types": [
+      "double"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 100,
+    "ac": false,
+    "curfew": "12:00 PM",
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "washing Machine"
+    ],
+    "source": "Friend",
+    "contact": "9168144251",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.466591788411936,
+    "lng": 73.88760127036291,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 22,
+    "name": "VIT Girls Hostel",
+    "area": "Bibewadi",
+    "distance_kondhwa": 3,
+    "distance_bibwewadi": 1.5,
+    "rent_min": 6500,
+    "rent_max": 6500,
+    "deposit": 10000,
+    "sharing_types": [
+      "quadriple"
+    ],
+    "gender": "female",
+    "food": true,
+    "wifi_speed": 10,
+    "ac": false,
+    "curfew": "10:30 PM",
+    "amenities": [
+      "Mess Facility",
+      "Washing Machines"
+    ],
+    "source": "Friend",
+    "contact": "7058432250",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.464467417115625,
+    "lng": 73.8708080537822,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 23,
+    "name": "MVPM Laxmi Hostel",
+    "area": "Swargate",
+    "distance_kondhwa": 6,
+    "distance_bibwewadi": 5,
+    "rent_min": 10000,
+    "rent_max": 10000,
+    "deposit": 5000,
+    "sharing_types": [
+      "double"
+    ],
+    "gender": "male",
+    "food": true,
+    "wifi_speed": 10,
+    "ac": false,
+    "curfew": "10:30 PM",
+    "amenities": [
+      "Washing Machine",
+      "HOt & Cold Water Filter",
+      "Geyser",
+      "Wi-Fi"
+    ],
+    "source": "Friend",
+    "contact": "9763304933",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/MVPM%20Laxmi%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.15.20%20%281%29.jpeg",
+      "/hostel_images/MVPM%20Laxmi%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.15.20.jpeg",
+      "/hostel_images/MVPM%20Laxmi%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.15.23%20%281%29.jpeg",
+      "/hostel_images/MVPM%20Laxmi%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.15.23.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.465869895148614,
+    "lng": 73.88569646605872,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 24,
+    "name": "Sakhi Hostel",
+    "area": "Sainagar , kondhwa",
+    "distance_kondhwa": 1,
+    "distance_bibwewadi": 3,
+    "rent_min": 10000,
+    "rent_max": 10000,
+    "deposit": 6000,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "any",
+    "food": true,
+    "wifi_speed": 20,
+    "ac": false,
+    "curfew": "8:00 PM",
+    "amenities": [
+      "Washing Machine",
+      "HOt & Cold Water Filter",
+      "Wi-Fi"
+    ],
+    "source": "Friend",
+    "contact": "7248921070",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Sakhi%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.20.05%20%281%29.jpeg",
+      "/hostel_images/Sakhi%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.20.05%20%282%29.jpeg",
+      "/hostel_images/Sakhi%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.20.05.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.466683308689518,
+    "lng": 73.87416080512236,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 25,
+    "name": "Muktai Girls Hostel",
+    "area": "Salve Garden",
+    "distance_kondhwa": 1,
+    "distance_bibwewadi": 2.5,
+    "rent_min": 8000,
+    "rent_max": 8000,
+    "deposit": 20000,
+    "sharing_types": [
+      "double"
+    ],
+    "gender": "female",
+    "food": true,
+    "wifi_speed": 50,
+    "ac": false,
+    "curfew": "8:30 PM",
+    "amenities": [
+      "Study Table",
+      "Mess Facility",
+      "Washing Machines"
+    ],
+    "source": "Friend",
+    "contact": "9822500632",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": true,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.45968917277456,
+    "lng": 73.87743310710778,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 26,
+    "name": "GuruKrupa Boys Hostel",
+    "area": "Gokul nagar , Satrunjay nagar, Kondhwa",
+    "distance_kondhwa": 1.9,
+    "distance_bibwewadi": 2.8,
+    "rent_min": 10000,
+    "rent_max": 10000,
+    "deposit": 7000,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "male",
+    "food": true,
+    "wifi_speed": 82,
+    "ac": false,
+    "curfew": "12:00 PM",
+    "amenities": [
+      "ashing Machine",
+      "HOt & Cold Water Filter",
+      "Wi-Fi",
+      "Parking",
+      "Food facility"
+    ],
+    "source": "Friend",
+    "contact": "7057263020",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/GuruKrupa%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.25.47%20%281%29.jpeg",
+      "/hostel_images/GuruKrupa%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.25.47%20%282%29.jpeg",
+      "/hostel_images/GuruKrupa%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.25.47%20%283%29.jpeg",
+      "/hostel_images/GuruKrupa%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.25.47%20%284%29.jpeg",
+      "/hostel_images/GuruKrupa%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.25.47.jpeg",
+      "/hostel_images/GuruKrupa%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.25.48.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.45834163496171,
+    "lng": 73.88352918528767,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 27,
+    "name": "Vishwkarma Boys Hostel",
+    "area": "MAllik Nagar",
+    "distance_kondhwa": 2,
+    "distance_bibwewadi": 2.5,
+    "rent_min": 11000,
+    "rent_max": 11000,
+    "deposit": 5000,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "male",
+    "food": true,
+    "wifi_speed": 130,
+    "ac": false,
+    "curfew": "12:00 AM",
+    "amenities": [
+      "Study Table",
+      "Mess Facility",
+      "Washing Machines"
+    ],
+    "source": "Friend",
+    "contact": "9529007742",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": true,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Vishwkarma%20Boys%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.29.10%20%281%29.jpeg",
+      "/hostel_images/Vishwkarma%20Boys%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.29.10%20%282%29.jpeg",
+      "/hostel_images/Vishwkarma%20Boys%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.29.10.jpeg",
+      "/hostel_images/Vishwkarma%20Boys%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.29.11.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.450516700162147,
+    "lng": 73.88778959818205,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 28,
+    "name": "Shri GB Rathi Maheshwari Boys Hostel",
+    "area": "Shtrunjay Nagar , Kondhwa",
+    "distance_kondhwa": 1.5,
+    "distance_bibwewadi": 2.4,
+    "rent_min": 8000,
+    "rent_max": 8000,
+    "deposit": 6000,
+    "sharing_types": [
+      "quadriple"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 120,
+    "ac": false,
+    "curfew": "11:30 PM",
+    "amenities": [
+      "Study Table",
+      "Washing Machines",
+      "coubard",
+      "Hot and Cold Water"
+    ],
+    "source": "Friend",
+    "contact": "9834213029",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": true,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Shri%20GB%20Rathi%20Mahaeshawari%20Boys%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.33.29%20%281%29.jpeg",
+      "/hostel_images/Shri%20GB%20Rathi%20Mahaeshawari%20Boys%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.33.29%20%282%29.jpeg",
+      "/hostel_images/Shri%20GB%20Rathi%20Mahaeshawari%20Boys%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.33.29%20%283%29.jpeg",
+      "/hostel_images/Shri%20GB%20Rathi%20Mahaeshawari%20Boys%20hostel/WhatsApp%20Image%202026-05-17%20at%2011.33.29.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.46325010847942,
+    "lng": 73.87534672988917,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 29,
+    "name": "Sadhivinayak Hostel",
+    "area": "Near Vit college , Kondhwa Campus",
+    "distance_kondhwa": 0.95,
+    "distance_bibwewadi": 2.4,
+    "rent_min": 7000,
+    "rent_max": 7000,
+    "deposit": 4000,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 75,
+    "ac": false,
+    "curfew": "10:30 PM",
+    "amenities": [
+      "Study Table",
+      "Washing Machines",
+      "coubard",
+      "Hot and Cold Water"
+    ],
+    "source": "Friend",
+    "contact": "8237705344",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": true,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Sadhivinayak%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.36.33%20%281%29.jpeg",
+      "/hostel_images/Sadhivinayak%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.36.33%20%282%29.jpeg",
+      "/hostel_images/Sadhivinayak%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.36.33%20%283%29.jpeg",
+      "/hostel_images/Sadhivinayak%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.36.33.jpeg",
+      "/hostel_images/Sadhivinayak%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.36.34.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.4594701661623,
+    "lng": 73.88348588364057,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 30,
+    "name": "Samarth Boys Hostel",
+    "area": "Aanath thirth nagar , Kondhwa",
+    "distance_kondhwa": 1.7,
+    "distance_bibwewadi": 2.6,
+    "rent_min": 7500,
+    "rent_max": 7500,
+    "deposit": 6000,
+    "sharing_types": [
+      "quadriple"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 80,
+    "ac": false,
+    "curfew": "11:00 PM",
+    "amenities": [
+      "Study Table",
+      "Washing Machines",
+      "Parking",
+      "Hot and Cold water"
+    ],
+    "source": "Friend",
+    "contact": "7875778048",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": true,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Samarth%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.41.24%20%281%29.jpeg",
+      "/hostel_images/Samarth%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.41.24%20%282%29.jpeg",
+      "/hostel_images/Samarth%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.41.24.jpeg",
+      "/hostel_images/Samarth%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.41.25%20%281%29.jpeg",
+      "/hostel_images/Samarth%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.41.25.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.457052780538206,
+    "lng": 73.88973722229225,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  },
+  {
+    "id": 31,
+    "name": "Sarthak Boys Hostel",
+    "area": "Salve Garden , Sainagar , Kondhwa",
+    "distance_kondhwa": 1.3,
+    "distance_bibwewadi": 1.9,
+    "rent_min": 7200,
+    "rent_max": 7200,
+    "deposit": 5000,
+    "sharing_types": [
+      "triple"
+    ],
+    "gender": "male",
+    "food": false,
+    "wifi_speed": 95,
+    "ac": false,
+    "curfew": "11:00 PM",
+    "amenities": [
+      "Washing Machine",
+      "HOt & Cold Water Filter",
+      "Wi-Fi"
+    ],
+    "source": "Friend",
+    "contact": "9960751022",
+    "cctv": false,
+    "power_backup": false,
+    "biometric": false,
+    "study_room": false,
+    "warden_type": null,
+    "verified": false,
+    "safety_score": null,
+    "tier": "basic",
+    "images": [
+      "/hostel_images/Sarthak%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.44.37%20%281%29.jpeg",
+      "/hostel_images/Sarthak%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.44.37%20%282%29.jpeg",
+      "/hostel_images/Sarthak%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.44.37%20%283%29.jpeg",
+      "/hostel_images/Sarthak%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.44.37%20%284%29.jpeg",
+      "/hostel_images/Sarthak%20Boys%20Hostel/WhatsApp%20Image%202026-05-17%20at%2011.44.37.jpeg"
+    ],
+    "description": "",
+    "bus_stop_distance": null,
+    "hospital_distance": null,
+    "grocery_distance": null,
+    "gym_distance": null,
+    "lat": 18.46967348662402,
+    "lng": 73.87107964287166,
+    "food_menu": {
+      "Monday": {
+        "Breakfast": "Poha / Tea",
+        "Lunch": "Dal Tadka, Rice, Sabzi",
+        "Dinner": "Paneer Masala, Roti"
+      },
+      "Tuesday": {
+        "Breakfast": "Upma / Coffee",
+        "Lunch": "Chole Bhature",
+        "Dinner": "Aloo Gobhi, Paratha"
+      },
+      "Wednesday": {
+        "Breakfast": "Idli Sambhar",
+        "Lunch": "Veg Biryani, Raita",
+        "Dinner": "Mix Veg, Chapati"
+      },
+      "Thursday": {
+        "Breakfast": "Paratha / Curd",
+        "Lunch": "Rajma Chawal",
+        "Dinner": "Soya Chunks, Roti"
+      },
+      "Friday": {
+        "Breakfast": "Vada Pav / Tea",
+        "Lunch": "Pav Bhaji",
+        "Dinner": "Baingan Bharta, Bhakri"
+      },
+      "Saturday": {
+        "Breakfast": "Bread Butter",
+        "Lunch": "Puri Bhaji",
+        "Dinner": "Egg Curry / Dal Fry"
+      },
+      "Sunday": {
+        "Breakfast": "Misal Pav",
+        "Lunch": "Spl Veg Thali",
+        "Dinner": "Khichdi Kadhi"
+      }
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "pg_id": 1,
+    "pg_name": "Stanza Living: Austin House",
+    "reviews": [
+      { "user": "Aryan M.", "rating": 8.5, "duration_months": 10, "text": "Great amenities, meals are decent. A bit pricey but worth it.", "date": "2024-11-01" },
+      { "user": "Rohit K.", "rating": 7.5, "duration_months": 3, "text": "Clean rooms, housekeeping is regular.", "date": "2024-08-15" }
+    ]
+  },
+  {
+    "pg_id": 2,
+    "pg_name": "Casa Living: Iris House",
+    "reviews": [
+      { "user": "Priya S.", "rating": 8.0, "duration_months": 12, "text": "Best PG for girls near VIT! CCTV everywhere, felt very safe.", "date": "2024-12-01" },
+      { "user": "Anjali T.", "rating": 9.0, "duration_months": 8, "text": "Loved the gaming zone and the manager is very helpful.", "date": "2024-10-10" },
+      { "user": "Neha R.", "rating": 7.0, "duration_months": 2, "text": "Curfew at 10pm is strict but rooms are nice.", "date": "2024-05-20" }
+    ]
+  },
+  {
+    "pg_id": 3,
+    "pg_name": "Stanza Living: Juliaca House",
+    "reviews": [
+      { "user": "Vikram P.", "rating": 7.5, "duration_months": 6, "text": "Far from Kondhwa campus but comfortable.", "date": "2024-09-01" }
+    ]
+  },
+  {
+    "pg_id": 5,
+    "pg_name": "Studious Girls Hostel",
+    "reviews": [
+      { "user": "Sakshi G.", "rating": 9.5, "duration_months": 11, "text": "Study room is amazing, very quiet environment!", "date": "2024-11-15" },
+      { "user": "Tanvi M.", "rating": 8.0, "duration_months": 7, "text": "Good facilities, strict curfew but safe.", "date": "2024-09-20" },
+      { "user": "Riya B.", "rating": 7.5, "duration_months": 4, "text": "Value for money. No food but nearby mess.", "date": "2024-07-01" }
+    ]
+  },
+  {
+    "pg_id": 6,
+    "pg_name": "Swami Krupa Boys Hostel",
+    "reviews": [
+      { "user": "Aditya N.", "rating": 8.5, "duration_months": 9, "text": "Mess food is great. WiFi is super fast 60+ mbps.", "date": "2024-10-01" },
+      { "user": "Dev S.", "rating": 7.0, "duration_months": 4, "text": "Indoor games and TT table are a plus!", "date": "2024-08-01" }
+    ]
+  },
+  {
+    "pg_id": 7,
+    "pg_name": "Homies' Living Sapphire",
+    "reviews": [
+      { "user": "Karan T.", "rating": 9.0, "duration_months": 8, "text": "Closest to VIT Kondhwa! Under 5 min walk.", "date": "2024-09-15" },
+      { "user": "Harsh M.", "rating": 8.5, "duration_months": 5, "text": "Terrace is awesome for hangouts. Power backup reliable.", "date": "2024-07-10" }
+    ]
+  },
+  {
+    "pg_id": 9,
+    "pg_name": "Alchemy Living",
+    "reviews": [
+      { "user": "Nikhil A.", "rating": 6.5, "duration_months": 5, "text": "Single room luxury but limited amenities.", "date": "2024-08-20" }
+    ]
+  }
+]

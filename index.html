@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StayHub — Smart PG Finder for VIT Pune</title>
+  <meta name="description" content="Find your perfect PG near VIT Pune. AI-powered matching based on budget, distance, safety, and lifestyle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/home-v3.css">
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="#7A9E87"/><path d="M6 15.5L14 7.5L22 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9.5" y="15.5" width="9" height="7" rx="1" stroke="white" stroke-width="2" fill="none"/><rect x="12.5" y="18" width="3" height="4.5" rx="0.5" fill="white"/></svg>
+        <span>StayHub</span>
+      </a>
+      <div class="nav-links">
+        <a href="listings.html" class="nav-link">Browse PGs</a>
+        <a href="fitscore.html" class="nav-link">AI Match</a>
+        <a href="chat.html" class="nav-link">Community</a>
+      </div>
+      <a href="fitscore.html" class="btn-primary">Find my space →</a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="listings.html">Browse PGs</a>
+      <a href="fitscore.html">AI Match</a>
+      <a href="chat.html">Community</a>
+      <a href="fitscore.html" class="btn-primary" style="justify-content:center">Find My PG →</a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <!-- Overlay div for Vanta Net (transparent layer on top of Topology) -->
+    <div id="vantaNetOverlay" style="position:absolute;inset:0;z-index:1;pointer-events:none;"></div>
+    <div class="hero-content">
+
+      <div class="hero-eyebrow reveal">
+        <span class="hero-eyebrow-dot"></span>
+        For VIT Pune Students
+      </div>
+
+      <h1 class="hero-headline reveal">
+        Find your<br>
+        <em>perfect</em> space.
+      </h1>
+
+      <p class="hero-sub reveal">
+        The smartest PG finder for university students — powered by algorithms
+        that actually understand what you need.
+      </p>
+
+      <!-- Floating Search Bar -->
+      <div class="hero-search reveal" id="heroSearch">
+        <div class="hero-search-field">
+          <label for="heroLocation">Location</label>
+          <input type="text" id="heroLocation" placeholder="Kondhwa, Bibwewadi…" autocomplete="off">
+        </div>
+        <div class="hero-search-divider"></div>
+        <div class="hero-search-field">
+          <label for="heroBudget">Max Budget</label>
+          <input type="text" id="heroBudget" placeholder="e.g. ₹10,000" autocomplete="off">
+        </div>
+        <button class="hero-search-btn" id="heroSearchBtn" onclick="handleHeroSearch()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
+          Search
+        </button>
+      </div>
+
+      <p class="hero-search-hint reveal">
+        <span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          31 verified listings
+        </span>
+        <span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          AI match in &lt;400ms
+        </span>
+        <span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          No signup needed
+        </span>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ─── SCROLLING IMAGE GALLERY ───────────────────────────── -->
+  <div class="hero-gallery" aria-hidden="true">
+    <div class="gallery-track" id="galleryTrack">
+      <div class="gallery-item"><img src="pg_room_premium_1778858759007.png" alt="Premium Room"></div>
+      <div class="gallery-item"><img src="stayhub_hero_concept_1778858706409.png" alt="StayHub Concept" onerror="this.src='pg_room_shared_1778858926245.png'"></div>
+      <div class="gallery-item"><img src="pg_room_shared_1778858926245.png" alt="Shared Room"></div>
+      <div class="gallery-item"><img src="tech_algorithm_visual_1778859077341.png" alt="Algorithm"></div>
+      <div class="gallery-item"><img src="pg_room_premium_1778858759007.png" alt="Premium"></div>
+      <div class="gallery-item"><img src="pg_room_shared_1778858926245.png" alt="Shared"></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="gallery-item"><img src="pg_room_premium_1778858759007.png" alt="Premium Room"></div>
+      <div class="gallery-item"><img src="stayhub_hero_concept_1778858706409.png" alt="StayHub Concept" onerror="this.src='pg_room_shared_1778858926245.png'"></div>
+      <div class="gallery-item"><img src="pg_room_shared_1778858926245.png" alt="Shared Room"></div>
+      <div class="gallery-item"><img src="tech_algorithm_visual_1778859077341.png" alt="Algorithm"></div>
+      <div class="gallery-item"><img src="pg_room_premium_1778858759007.png" alt="Premium"></div>
+      <div class="gallery-item"><img src="pg_room_shared_1778858926245.png" alt="Shared"></div>
+    </div>
+  </div>
+
+  <!-- ─── STATS BAR ─────────────────────────────────────────── -->
+  <div class="stats-bar" id="statsSection">
+    <div class="stats-bar-inner">
+      <div class="stat-item">
+        <div class="stat-num-row">
+          <span class="stat-num" data-target="31">0</span>
+          <span class="stat-suffix">+</span>
+        </div>
+        <span class="stat-label">PGs Listed</span>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num-row">
+          <span class="stat-num" data-target="2">0</span>
+        </div>
+        <span class="stat-label">VIT Campuses</span>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num-row">
+          <span class="stat-num" data-target="400">0</span>
+          <span class="stat-suffix">ms</span>
+        </div>
+        <span class="stat-label">Match Time</span>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num-row">
+          <span class="stat-num" data-target="98">0</span>
+          <span class="stat-suffix">%</span>
+        </div>
+        <span class="stat-label">Students Satisfied</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── HOW IT WORKS (BENTO) ──────────────────────────────── -->
+  <section class="section bento-section" id="how-it-works">
+    <div class="bento-header reveal">
+      <span class="label-tag">Our Process</span>
+      <h2 class="bento-title-lg">Cool tech,<br><em class="serif-italic">simple</em> experience.</h2>
+    </div>
+
+    <div class="bento-grid">
+
+      <!-- Large: Multi-layer Ranking -->
+      <div class="bento-card b1 reveal">
+        <div class="b-label">Core Algorithm</div>
+        <div class="icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Multi-Layer Ranking</h3>
+        <p>ROC (Rank Order Centroid) weighting converts your vague preferences into precise decimal weights. No more guessing which PG is "better".</p>
+        <div class="roc-chart">
+          <div class="roc-row">
+            <span class="roc-rank">1</span>
+            <span class="roc-name">Budget</span>
+            <div class="roc-bar-wrap"><div class="roc-bar" style="width:45.7%"></div></div>
+            <span class="roc-pct">45.7%</span>
+          </div>
+          <div class="roc-row">
+            <span class="roc-rank">2</span>
+            <span class="roc-name">Distance</span>
+            <div class="roc-bar-wrap"><div class="roc-bar" style="width:25.7%"></div></div>
+            <span class="roc-pct">25.7%</span>
+          </div>
+          <div class="roc-row">
+            <span class="roc-rank">3</span>
+            <span class="roc-name">Safety</span>
+            <div class="roc-bar-wrap"><div class="roc-bar" style="width:15.7%"></div></div>
+            <span class="roc-pct">15.7%</span>
+          </div>
+          <div class="roc-row">
+            <span class="roc-rank">4</span>
+            <span class="roc-name">Amenities</span>
+            <div class="roc-bar-wrap"><div class="roc-bar" style="width:8.9%"></div></div>
+            <span class="roc-pct">8.9%</span>
+          </div>
+          <div class="roc-row">
+            <span class="roc-rank">5</span>
+            <span class="roc-name">WiFi</span>
+            <div class="roc-bar-wrap"><div class="roc-bar" style="width:4.0%"></div></div>
+            <span class="roc-pct">4.0%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dijkstra -->
+      <div class="bento-card b2 reveal">
+        <div class="icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="b-label">Spatial Computing</div>
+        <h3>Dijkstra's Distance</h3>
+        <p>We don't use "as the crow flies". We calculate real walking paths to VIT campus and local amenities using node-based graph logic.</p>
+        <div class="bento-img-wrap">
+          <img src="tech_algorithm_visual_1778859077341.png" alt="Algorithm visual">
+        </div>
+      </div>
+
+      <!-- Safety -->
+      <div class="bento-card b3 reveal">
+        <div class="icon">🔒</div>
+        <div class="b-label">Verified</div>
+        <h3>Safety First</h3>
+        <p>CCTV, biometric access, and duration-weighted warden reviews.</p>
+      </div>
+
+      <!-- Speed -->
+      <div class="bento-card b4 reveal">
+        <div class="icon">⚡</div>
+        <div class="b-label">Performance</div>
+        <h3>Instant Results</h3>
+        <p>Top 10 ranked matches in under 400ms.</p>
+      </div>
+
+      <!-- Reviews -->
+      <div class="bento-card b5 reveal">
+        <div class="icon">⭐</div>
+        <div class="b-label">Trust System</div>
+        <h3>Duration-Weighted Reviews</h3>
+        <p>Students who stayed 12 months weigh 3.5× more than 1-month reviewers. Recent feedback matters — but long-term residents know best.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── FEATURED LISTINGS ──────────────────────────────────── -->
+  <section class="section featured-section">
+    <div class="featured-header reveal">
+      <div>
+        <span class="label-tag">Quick Browse</span>
+        <h2 class="featured-title">Top-rated PGs</h2>
+      </div>
+      <a href="listings.html" class="featured-link">
+        View all 31
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="featured-grid" id="featuredListings">
+      <!-- Skeleton placeholders -->
+      <div class="skeleton-card">
+        <div class="sk-img"></div>
+        <div class="sk-body">
+          <div class="sk-line w-80"></div>
+          <div class="sk-line w-60"></div>
+          <div class="sk-line w-40"></div>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="sk-img"></div>
+        <div class="sk-body">
+          <div class="sk-line w-80"></div>
+          <div class="sk-line w-60"></div>
+          <div class="sk-line w-40"></div>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="sk-img"></div>
+        <div class="sk-body">
+          <div class="sk-line w-80"></div>
+          <div class="sk-line w-60"></div>
+          <div class="sk-line w-40"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ALGORITHM SECTION ─────────────────────────────────── -->
+  <section class="section algo-section">
+    <div class="algo-inner">
+      <div class="algo-text reveal">
+        <span class="label-tag algo-eyebrow">Under the Hood</span>
+        <h2 class="algo-title">Not a filter.<br>An engine.</h2>
+        <p class="algo-desc">Most PG sites let you filter by price. StayHub computes a personalised rank using algorithms borrowed from operations research and spatial computing.</p>
+        <div class="algo-pills">
+          <div class="algo-pill">
+            <span class="algo-pill-name">ROC Weighting</span>
+            <span class="algo-pill-desc">Rank Order Centroid — converts priority order into precise decimal weights.</span>
+          </div>
+          <div class="algo-pill">
+            <span class="algo-pill-name">Dijkstra's Algorithm</span>
+            <span class="algo-pill-desc">Spatial graph traversal for real walking distances to campus, hospitals, gyms.</span>
+          </div>
+          <div class="algo-pill">
+            <span class="algo-pill-name">Duration-Weighted Reviews</span>
+            <span class="algo-pill-desc">12-month residents weigh 3.5× more than 1-month reviewers.</span>
+          </div>
+          <div class="algo-pill">
+            <span class="algo-pill-name">Soft Constraint Penalties</span>
+            <span class="algo-pill-desc">Over budget ≠ eliminated. A graduated penalty keeps your options open.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="algo-visual reveal">
+        <div class="algo-card">
+          <div class="algo-card-title">ROC Ranking — Live Simulation</div>
+          <div class="ac-roc-row">
+            <span class="ac-rank">1</span>
+            <span class="ac-name">Budget</span>
+            <span class="ac-pct">45.7%</span>
+            <div class="ac-bar-wrap"><div class="ac-bar" style="width:45.7%"></div></div>
+          </div>
+          <div class="ac-roc-row">
+            <span class="ac-rank">2</span>
+            <span class="ac-name">Distance</span>
+            <span class="ac-pct">25.7%</span>
+            <div class="ac-bar-wrap"><div class="ac-bar" style="width:25.7%"></div></div>
+          </div>
+          <div class="ac-roc-row">
+            <span class="ac-rank">3</span>
+            <span class="ac-name">Safety</span>
+            <span class="ac-pct">15.7%</span>
+            <div class="ac-bar-wrap"><div class="ac-bar" style="width:15.7%"></div></div>
+          </div>
+          <div class="ac-roc-row">
+            <span class="ac-rank">4</span>
+            <span class="ac-name">Amenities</span>
+            <span class="ac-pct">8.9%</span>
+            <div class="ac-bar-wrap"><div class="ac-bar" style="width:8.9%"></div></div>
+          </div>
+          <div class="ac-roc-row">
+            <span class="ac-rank">5</span>
+            <span class="ac-name">WiFi</span>
+            <span class="ac-pct">4.0%</span>
+            <div class="ac-bar-wrap"><div class="ac-bar" style="width:4.0%"></div></div>
+          </div>
+        </div>
+
+        <div class="algo-card-2col">
+          <div class="algo-card">
+            <div class="algo-card-title">Match Speed</div>
+            <div style="font-size:2.2rem;font-family:var(--font-serif);font-weight:900;color:var(--white);margin-top:8px">&lt;400<span style="font-size:1rem;color:rgba(255,255,255,0.5)">ms</span></div>
+            <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px">Average query time</div>
+          </div>
+          <div class="algo-card">
+            <div class="algo-card-title">Listings</div>
+            <div style="font-size:2.2rem;font-family:var(--font-serif);font-weight:900;color:var(--white);margin-top:8px">31</div>
+            <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px">Verified PGs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ───────────────────────────────────────────────── -->
+  <section class="section cta-section">
+    <div class="cta-inner reveal">
+      <h2 class="cta-headline">Ready to find your perfect PG?</h2>
+      <p class="cta-sub">Answer 5 quick questions. Get a personalised AI-ranked list of every eligible PG in under a second.</p>
+      <div class="cta-btns">
+        <a href="fitscore.html" class="btn-primary">Start AI Match →</a>
+        <a href="listings.html" class="btn-ghost">Browse all PGs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="#7A9E87"/><path d="M6 15.5L14 7.5L22 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9.5" y="15.5" width="9" height="7" rx="1" stroke="white" stroke-width="2" fill="none"/><rect x="12.5" y="18" width="3" height="4.5" rx="0.5" fill="white"/></svg>
+          <span>StayHub</span>
+        </a>
+        <p class="footer-tagline">Intelligent PG finder for VIT Pune students. Powered by ROC + Dijkstra algorithms.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-col-title">Explore</div>
+          <a href="listings.html">All Listings</a>
+          <a href="fitscore.html">AI Matcher</a>
+          <a href="chat.html">Community</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Campuses</div>
+          <a href="listings.html?campus=kondhwa">Kondhwa</a>
+          <a href="listings.html?campus=bibwewadi">Bibwewadi</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 StayHub. Built for VIT Pune students.</span>
+      <span>Powered by ROC + Dijkstra</span>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/home.js"></script>
+
+  <!-- Vanta Topology (p5.js based) -->
+  <script src="js/p5.min.js"></script>
+  <script src="js/vanta.topology.min.js"></script>
+
+  <!-- Vanta Net (three.js based) -->
+  <script src="js/three.min.js"></script>
+  <script src="js/vanta.net.min.js"></script>
+
+  <script>
+    // Initialize both Vanta effects on separate layers
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof VANTA === 'undefined') return;
+
+      // Layer 1 — Topology on #hero (bottom, renders the background)
+      if (VANTA.TOPOLOGY) {
+        VANTA.TOPOLOGY({
+          el: "#hero",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x7a9e87,
+          backgroundColor: 0xe8f0eb
+        });
+      }
+
+      // Layer 2 — Net on #vantaNetOverlay (transparent overlay)
+      if (VANTA.NET) {
+        VANTA.NET({
+          el: "#vantaNetOverlay",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x4f7a5e,
+          backgroundColor: 0xe8f0eb,
+          backgroundAlpha: 0.0,
+          points: 10.00,
+          maxDistance: 23.00,
+          spacing: 17.00
+        });
+      }
+    });
+  </script>
+  <script>
+    // ── Nav scroll ──────────────────────────────────────────
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), { passive: true });
+
+    // ── Hamburger ───────────────────────────────────────────
+    document.getElementById('navHamburger').addEventListener('click', () =>
+      document.getElementById('navMobile').classList.toggle('open')
+    );
+
+    // ── Scroll reveal ───────────────────────────────────────
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // ── Stat counters ───────────────────────────────────────
+    const statsObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.querySelectorAll('.stat-num').forEach(el => {
+          const target = parseInt(el.dataset.target);
+          const dur = 1400, start = performance.now();
+          const tick = (now) => {
+            const p = Math.min((now - start) / dur, 1);
+            const e = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(e * target);
+            if (p < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        });
+        statsObs.unobserve(entry.target);
+      });
+    }, { threshold: 0.4 });
+    const statsSection = document.getElementById('statsSection');
+    if (statsSection) statsObs.observe(statsSection);
+
+    // ── Animate ROC bars on scroll ──────────────────────────
+    const rocObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.roc-bar, .ac-bar').forEach(bar => {
+            const target = bar.style.width;
+            bar.style.width = '0';
+            requestAnimationFrame(() => requestAnimationFrame(() => bar.style.width = target));
+          });
+          rocObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.bento-card, .algo-visual').forEach(el => rocObs.observe(el));
+
+    // ── Hero search ─────────────────────────────────────────
+    function handleHeroSearch() {
+      const loc = document.getElementById('heroLocation').value.trim().toLowerCase();
+      const budget = document.getElementById('heroBudget').value.replace(/[₹,]/g, '').trim();
+      let url = 'listings.html';
+      const params = new URLSearchParams();
+      if (loc.includes('bibwewadi')) params.set('campus', 'bibwewadi');
+      else params.set('campus', 'kondhwa');
+      if (budget) params.set('budget', budget);
+      window.location.href = url + '?' + params.toString();
+    }
+    document.getElementById('heroBudget').addEventListener('keydown', e => { if (e.key === 'Enter') handleHeroSearch(); });
+    document.getElementById('heroLocation').addEventListener('keydown', e => { if (e.key === 'Enter') handleHeroSearch(); });
+  </script>
+  <script src="js/hostel-images.js"></script>
+</body>
+</html>

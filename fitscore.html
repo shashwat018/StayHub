@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Match — StayHub</title>
+  <meta name="description" content="Answer 5 quick questions and get a personalised AI-ranked list of PGs near VIT Pune in under a second.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/fitscore-v3.css">
+  <link rel="stylesheet" href="css/fitscore.css">
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <nav class="nav solid" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="#7A9E87"/><path d="M6 15.5L14 7.5L22 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9.5" y="15.5" width="9" height="7" rx="1" stroke="white" stroke-width="2" fill="none"/><rect x="12.5" y="18" width="3" height="4.5" rx="0.5" fill="white"/></svg>
+        <span>StayHub</span>
+      </a>
+      <div class="nav-links">
+        <a href="listings.html" class="nav-link">Browse PGs</a>
+        <a href="fitscore.html" class="nav-link active">AI Match</a>
+        <a href="chat.html" class="nav-link">Community</a>
+      </div>
+      <div class="nav-avatar" title="Profile">S</div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="listings.html">Browse PGs</a>
+      <a href="fitscore.html">AI Match</a>
+      <a href="chat.html">Community</a>
+    </div>
+  </nav>
+
+  <div id="vanta-left"></div>
+
+  <!-- ─── TWO-PANEL LAYOUT ──────────────────────────────────── -->
+  <div class="fitscore-layout">
+
+    <!-- ─── LEFT: FORM PANEL ──────────────────────────────── -->
+    <div class="fs-form-panel">
+      <div class="fs-form-inner">
+
+        <div class="fs-header">
+          <span class="label-tag">Powered by ROC + Dijkstra</span>
+          <h1 class="fs-headline">Find your<br><em>perfect match.</em></h1>
+          <p class="fs-sub">Answer a few questions. Get a personalised FitScore ranking of every eligible PG in under a second.</p>
+        </div>
+
+        <!-- Progress dots -->
+        <div class="fs-progress" id="fsProgress">
+          <div class="fs-step-dot active" data-step="0"></div>
+          <div class="fs-step-dot" data-step="1"></div>
+          <div class="fs-step-dot" data-step="2"></div>
+          <span class="fs-progress-label">Step <span id="stepLabel">1</span> of 3</span>
+        </div>
+
+        <!-- ─── STEP 1: Basic Info ────────────────────────── -->
+        <div class="fs-step" id="step1">
+
+          <div class="fs-field">
+            <span class="fs-label">You are a…</span>
+            <div class="gender-row">
+              <button type="button" class="gender-card" data-val="Female" id="genderFemale">
+                <span class="gender-icon">👩</span>
+                <span class="gender-text">Female student</span>
+              </button>
+              <button type="button" class="gender-card" data-val="Male" id="genderMale">
+                <span class="gender-icon">👨</span>
+                <span class="gender-text">Male student</span>
+              </button>
+              <button type="button" class="gender-card active" data-val="Any" id="genderAny">
+                <span class="gender-icon">🧑</span>
+                <span class="gender-text">No pref.</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="fs-field">
+            <span class="fs-label">Campus</span>
+            <div class="campus-row">
+              <button type="button" class="campus-card active" data-val="kondhwa" id="campusKondhwa">
+                <span class="campus-icon">🎓</span>
+                <div>
+                  <div class="campus-name">Kondhwa Campus</div>
+                  <div class="campus-addr">Survey No. 124, Kondhwa-Saswad Rd</div>
+                </div>
+                <div class="campus-card-radio"></div>
+              </button>
+              <button type="button" class="campus-card" data-val="bibwewadi" id="campusBibwewadi">
+                <span class="campus-icon">🏛</span>
+                <div>
+                  <div class="campus-name">Bibwewadi Campus</div>
+                  <div class="campus-addr">Bibwewadi, Pune</div>
+                </div>
+                <div class="campus-card-radio"></div>
+              </button>
+            </div>
+          </div>
+
+          <div class="fs-nav-row">
+            <button class="fs-next-btn" id="step1Next">
+              Continue
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ─── STEP 2: Budget & Preferences ────────────── -->
+        <div class="fs-step hidden" id="step2">
+
+          <div class="fs-field">
+            <span class="fs-label">Monthly Budget</span>
+            <div class="range-box-row">
+              <div class="range-box-wrap">
+                <span class="range-box-prefix">₹</span>
+                <input type="number" class="range-num-input" id="budgetMinBox" value="3000" min="3000" max="20000" step="500">
+              </div>
+              <span class="range-box-sep">to</span>
+              <div class="range-box-wrap">
+                <span class="range-box-prefix">₹</span>
+                <input type="number" class="range-num-input" id="budgetMaxBox" value="10000" min="3000" max="20000" step="500">
+              </div>
+            </div>
+            <div class="dual-range-wrap">
+              <div class="dual-track">
+                <div class="dual-fill" id="budgetFill"></div>
+              </div>
+              <input type="range" class="dual-thumb dual-thumb-min" id="budgetRangeMin" min="3000" max="20000" step="500" value="3000">
+              <input type="range" class="dual-thumb dual-thumb-max" id="budgetRange"    min="3000" max="20000" step="500" value="10000">
+            </div>
+            <div class="range-labels"><span>₹3,000</span><span>₹20,000</span></div>
+            <span class="fs-hint">PGs outside this range receive a graduated penalty in the score.</span>
+          </div>
+
+          <div class="fs-field">
+            <span class="fs-label">Distance from Campus</span>
+            <div class="range-box-row">
+              <div class="range-box-wrap">
+                <input type="number" class="range-num-input" id="distMinBox" value="0.5" min="0.5" max="5" step="0.5" style="width:80px">
+                <span class="range-box-suffix">km</span>
+              </div>
+              <span style="color:var(--muted);font-size:0.8rem;padding:0 4px">to</span>
+              <div class="range-box-wrap">
+                <input type="number" class="range-num-input" id="distBox" value="3" min="0.5" max="5" step="0.5" style="width:80px">
+                <span class="range-box-suffix">km</span>
+              </div>
+            </div>
+            <div class="dual-range-wrap">
+              <div class="dual-track">
+                <div class="dual-fill" id="distFill"></div>
+              </div>
+              <input type="range" class="dual-thumb dual-thumb-min" id="distRangeMin" min="0.5" max="5" step="0.5" value="0.5">
+              <input type="range" class="dual-thumb dual-thumb-max" id="distRange"    min="0.5" max="5" step="0.5" value="3">
+            </div>
+            <div class="range-labels"><span>0.5 km</span><span>5+ km</span></div>
+          </div>
+
+          <div class="fs-field">
+            <span class="fs-label">Additional requirements</span>
+            <div class="pref-grid">
+              <label class="pref-item" id="prefFood">
+                <input type="checkbox" id="needsFood">
+                <span class="pref-icon">🍽</span>
+                <div class="pref-text">
+                  <div class="pref-name">Food included</div>
+                  
+                </div>
+                <div class="pref-check-indicator">✓</div>
+              </label>
+              <label class="pref-item" id="prefCurfew">
+                <input type="checkbox" id="noCurfew">
+                <span class="pref-icon">🌙</span>
+                <div class="pref-text">
+                  <div class="pref-name">No curfew</div>
+                  
+                </div>
+                <div class="pref-check-indicator">✓</div>
+              </label>
+            </div>
+          </div>
+
+          <div class="fs-nav-row">
+            <button class="fs-back-btn" id="step2Back">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Back
+            </button>
+            <button class="fs-next-btn" id="step2Next">
+              Continue
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ─── STEP 3: Priorities ─────────────────────── -->
+        <div class="fs-step hidden" id="step3">
+
+          <div class="fs-field">
+            <span class="fs-label">Drag to rank your priorities</span>
+            <span class="fs-hint">Top item = highest weight in the recommendation algorithm. Updates live.</span>
+            <div class="priority-list" id="priorityList">
+              <div class="priority-item" data-val="budget" draggable="true">
+                <span class="priority-drag">⠿</span>
+                <span class="priority-emoji">💰</span>
+                <div class="priority-info">
+                  <div class="priority-name">Budget</div>
+                  <div class="priority-desc">Rent relative to your budget</div>
+                </div>
+                <div class="priority-rank">1</div>
+              </div>
+              <div class="priority-item" data-val="distance" draggable="true">
+                <span class="priority-drag">⠿</span>
+                <span class="priority-emoji">📍</span>
+                <div class="priority-info">
+                  <div class="priority-name">Distance</div>
+                  <div class="priority-desc">Proximity to campus</div>
+                </div>
+                <div class="priority-rank">2</div>
+              </div>
+              <div class="priority-item" data-val="safety" draggable="true">
+                <span class="priority-drag">⠿</span>
+                <span class="priority-emoji">🔒</span>
+                <div class="priority-info">
+                  <div class="priority-name">Safety</div>
+                  <div class="priority-desc">CCTV, warden, biometric</div>
+                </div>
+                <div class="priority-rank">3</div>
+              </div>
+              <div class="priority-item" data-val="amenities" draggable="true">
+                <span class="priority-drag">⠿</span>
+                <span class="priority-emoji">✨</span>
+                <div class="priority-info">
+                  <div class="priority-name">Amenities</div>
+                  <div class="priority-desc">Laundry, gym, study room</div>
+                </div>
+                <div class="priority-rank">4</div>
+              </div>
+              <div class="priority-item" data-val="wifi" draggable="true">
+                <span class="priority-drag">⠿</span>
+                <span class="priority-emoji">📶</span>
+                <div class="priority-info">
+                  <div class="priority-name">WiFi Speed</div>
+                  <div class="priority-desc">Internet quality</div>
+                </div>
+                <div class="priority-rank">5</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live weight preview -->
+          <div class="weight-preview">
+            <div class="weight-preview-title">
+              ROC Weight Preview
+              <span class="weight-preview-sub">Updates as you drag</span>
+            </div>
+            <div class="wp-rows" id="wpBars"></div>
+          </div>
+
+          <div class="fs-nav-row">
+            <button class="fs-back-btn" id="step3Back">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Back
+            </button>
+            <button class="fs-submit-btn" id="submitFitScore">
+              <span id="submitLabel">Get My Rankings</span>
+              <svg id="submitIcon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ─── RIGHT: RESULTS PANEL ──────────────────────────── -->
+    <div class="fs-results-panel" id="resultsPanel">
+      <div class="results-idle">
+        <div class="results-idle-icon">🏠</div>
+        <div class="results-idle-title">Your matches will appear here</div>
+        <div class="results-idle-sub">Complete the form on the left to see your personalised AI FitScore rankings.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/fitscore.js"></script>
+  <script>
+    // ── Nav ─────────────────────────────────────────────────
+    document.getElementById('navHamburger').addEventListener('click', () =>
+      document.getElementById('navMobile').classList.toggle('open')
+    );
+
+    // ── Step navigation ──────────────────────────────────────
+    let currentStep = 1;
+
+    function goToStep(n) {
+      document.querySelectorAll('.fs-step').forEach((s, i) => {
+        s.classList.toggle('hidden', i + 1 !== n);
+      });
+      document.querySelectorAll('.fs-step-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i + 1 === n);
+        dot.classList.toggle('done', i + 1 < n);
+      });
+      document.getElementById('stepLabel').textContent = n;
+      currentStep = n;
+    }
+
+    document.getElementById('step1Next').addEventListener('click', () => goToStep(2));
+    document.getElementById('step2Back').addEventListener('click', () => goToStep(1));
+    document.getElementById('step2Next').addEventListener('click', () => goToStep(3));
+    document.getElementById('step3Back').addEventListener('click', () => goToStep(2));
+
+    // ── Gender select ────────────────────────────────────────
+    document.querySelectorAll('.gender-card').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.gender-card').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // ── Campus select ────────────────────────────────────────
+    document.querySelectorAll('.campus-card').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.campus-card').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // ── Preference checkboxes ────────────────────────────────
+    document.querySelectorAll('.pref-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const cb = item.querySelector('input[type="checkbox"]');
+        cb.checked = !cb.checked;
+        item.classList.toggle('active', cb.checked);
+      });
+    });
+
+    // ── Dual-handle Budget slider ─────────────────────────────
+    (function() {
+      const minSlider = document.getElementById('budgetRangeMin');
+      const maxSlider = document.getElementById('budgetRange');
+      const minBox    = document.getElementById('budgetMinBox');
+      const maxBox    = document.getElementById('budgetMaxBox');
+      const fill      = document.getElementById('budgetFill');
+
+      function syncBudget() {
+        let lo = parseInt(minSlider.value);
+        let hi = parseInt(maxSlider.value);
+        if (lo >= hi) {
+          if (this === minSlider) lo = hi - 500, minSlider.value = lo;
+          else                    hi = lo + 500, maxSlider.value = hi;
+        }
+        const total = parseInt(minSlider.max) - parseInt(minSlider.min);
+        const leftPct  = (lo - parseInt(minSlider.min)) / total * 100;
+        const rightPct = 100 - (hi - parseInt(minSlider.min)) / total * 100;
+        fill.style.left  = leftPct  + '%';
+        fill.style.right = rightPct + '%';
+        minBox.value = lo;
+        maxBox.value = hi;
+      }
+      minSlider.addEventListener('input', syncBudget);
+      maxSlider.addEventListener('input', syncBudget);
+      minBox.addEventListener('change', function() {
+        minSlider.value = Math.max(parseInt(minSlider.min), Math.min(parseInt(this.value), parseInt(maxSlider.value) - 500));
+        syncBudget.call(minSlider);
+      });
+      maxBox.addEventListener('change', function() {
+        maxSlider.value = Math.min(parseInt(maxSlider.max), Math.max(parseInt(this.value), parseInt(minSlider.value) + 500));
+        syncBudget.call(maxSlider);
+      });
+      syncBudget.call(maxSlider);
+    })();
+
+    // ── Distance dual-range slider ────────────────────────────
+    (function() {
+      const minSlider = document.getElementById('distRangeMin');
+      const maxSlider = document.getElementById('distRange');
+      const minBox    = document.getElementById('distMinBox');
+      const maxBox    = document.getElementById('distBox');
+      const fill      = document.getElementById('distFill');
+      const STEP      = 0.5;
+
+      function syncDist() {
+        let lo = parseFloat(minSlider.value);
+        let hi = parseFloat(maxSlider.value);
+        if (lo >= hi) {
+          if (this === minSlider) { lo = hi - STEP; minSlider.value = lo; }
+          else                    { hi = lo + STEP; maxSlider.value = hi; }
+        }
+        const total    = parseFloat(minSlider.max) - parseFloat(minSlider.min);
+        const leftPct  = (lo - parseFloat(minSlider.min)) / total * 100;
+        const rightPct = 100 - (hi - parseFloat(minSlider.min)) / total * 100;
+        fill.style.left  = leftPct  + '%';
+        fill.style.right = rightPct + '%';
+        minBox.value = lo;
+        maxBox.value = hi;
+      }
+      minSlider.addEventListener('input', syncDist);
+      maxSlider.addEventListener('input', syncDist);
+      minBox.addEventListener('change', function() {
+        minSlider.value = Math.max(parseFloat(minSlider.min), Math.min(parseFloat(this.value), parseFloat(maxSlider.value) - STEP));
+        syncDist.call(minSlider);
+      });
+      maxBox.addEventListener('change', function() {
+        maxSlider.value = Math.min(parseFloat(maxSlider.max), Math.max(parseFloat(this.value), parseFloat(minSlider.value) + STEP));
+        syncDist.call(maxSlider);
+      });
+      syncDist.call(maxSlider);
+    })();
+
+    // ── Drag-to-rank priority list ───────────────────────────
+    const priorityList = document.getElementById('priorityList');
+    let dragSrc = null;
+
+    function updateRankNumbers() {
+      priorityList.querySelectorAll('.priority-item').forEach((item, i) => {
+        item.querySelector('.priority-rank').textContent = i + 1;
+      });
+      updateWeightPreview();
+    }
+
+    function rocWeights(n) {
+      const weights = [];
+      for (let i = 1; i <= n; i++) {
+        let w = 0;
+        for (let k = i; k <= n; k++) w += 1 / k;
+        weights.push(w / n);
+      }
+      return weights;
+    }
+
+    function updateWeightPreview() {
+      const items = [...priorityList.querySelectorAll('.priority-item')];
+      const weights = rocWeights(items.length);
+      const wpBars = document.getElementById('wpBars');
+      wpBars.innerHTML = items.map((item, i) => `
+        <div class="wp-row">
+          <span class="wp-name">${item.querySelector('.priority-name').textContent}</span>
+          <span class="wp-pct">${(weights[i] * 100).toFixed(1)}%</span>
+          <div class="wp-bar-wrap wp-row" style="grid-column:1/-1;margin-top:3px">
+            <div class="wp-bar" style="width:${weights[i] * 100}%"></div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    priorityList.addEventListener('dragstart', e => {
+      dragSrc = e.target.closest('.priority-item');
+      dragSrc?.classList.add('dragging');
+    });
+    priorityList.addEventListener('dragend', () => {
+      dragSrc?.classList.remove('dragging');
+      dragSrc = null;
+    });
+    priorityList.addEventListener('dragover', e => {
+      e.preventDefault();
+      const over = e.target.closest('.priority-item');
+      if (over && over !== dragSrc) {
+        const rect = over.getBoundingClientRect();
+        const mid = rect.top + rect.height / 2;
+        if (e.clientY < mid) over.parentNode.insertBefore(dragSrc, over);
+        else over.parentNode.insertBefore(dragSrc, over.nextSibling);
+        updateRankNumbers();
+      }
+    });
+
+    updateWeightPreview();
+  </script>
+  <script src="js/hostel-images.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.topology.min.js"></script>
+  <script>
+    VANTA.TOPOLOGY({
+      el: "#vanta-left",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x5a9e72,
+      backgroundColor: 0xf5faf6
+    });
+  </script>
+</body>
+</html>

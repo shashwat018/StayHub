@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StayHub Community — Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+<!-- ONBOARDING OVERLAY (shown on first visit) -->
+<div class="onboarding-overlay" id="onboardingOverlay">
+  <div class="onboarding-card" id="onboardingCard">
+    <!-- Step 1: Name -->
+    <div class="ob-step active" id="obStep1">
+      <div class="ob-logo">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="#7A9E87"/><path d="M6 15.5L14 7.5L22 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9.5" y="15.5" width="9" height="7" rx="1" stroke="white" stroke-width="2" fill="none"/><rect x="12.5" y="18" width="3" height="4.5" rx="0.5" fill="white"/></svg>
+        <span class="logo-text">StayHub</span>
+      </div>
+      <div class="ob-icon">👋</div>
+      <h2 class="ob-title">Welcome to the Community</h2>
+      <p class="ob-desc">Connect with fellow VIT Pune students. Plan football games, movie nights, treks — find your people.</p>
+      <div class="ob-field">
+        <label class="ob-label">What should we call you?</label>
+        <input type="text" class="ob-input" id="nameInput" placeholder="Your display name..." maxlength="24" autocomplete="off">
+        <div class="ob-hint">Visible to other students in chat rooms</div>
+      </div>
+      <button class="btn btn-primary ob-btn" id="nameNextBtn">
+        Continue <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+
+    <!-- Step 2: Hobbies -->
+    <div class="ob-step" id="obStep2">
+      <div class="ob-back" id="obBack">← Back</div>
+      <div class="ob-icon">🎯</div>
+      <h2 class="ob-title">What are you into?</h2>
+      <p class="ob-desc">Pick your hobbies — we'll highlight those chat rooms for you. You can access all rooms regardless.</p>
+      <div class="hobby-grid" id="hobbyGrid">
+        <!-- filled by JS -->
+      </div>
+      <div class="ob-selected-count"><span id="hobbyCount">0</span> selected</div>
+      <button class="btn btn-primary ob-btn" id="hobbyDoneBtn">
+        Enter Community →
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CHAT APP -->
+<div class="chat-app" id="chatApp" style="display:none">
+
+  <!-- TOP BAR -->
+  <header class="chat-topbar">
+    <a href="index.html" class="chat-logo">
+      <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="8" fill="#7A9E87"/><path d="M6 15.5L14 7.5L22 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9.5" y="15.5" width="9" height="7" rx="1" stroke="white" stroke-width="2" fill="none"/><rect x="12.5" y="18" width="3" height="4.5" rx="0.5" fill="white"/></svg>
+      <span class="logo-text">StayHub</span>
+    </a>
+    <div class="chat-topbar-center" id="topbarRoomInfo">
+      <span class="topbar-room-emoji" id="topbarEmoji">💬</span>
+      <div>
+        <div class="topbar-room-name" id="topbarRoomName">Select a room</div>
+        <div class="topbar-room-desc" id="topbarRoomDesc">Choose a hobby room from the left sidebar</div>
+      </div>
+    </div>
+    <div class="chat-topbar-right">
+      <div class="online-pill" id="onlinePill">
+        <span class="online-dot"></span>
+        <span id="onlineCount">0</span> online
+      </div>
+      <button class="topbar-btn" id="dmToggleBtn" title="Direct Messages">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        <span class="dm-notif-badge hidden" id="dmBadge">0</span>
+      </button>
+      <div class="user-pill" id="userPill">
+        <div class="user-avatar" id="userAvatar">?</div>
+        <span id="userPillName">...</span>
+      </div>
+      <a href="index.html" class="topbar-btn" title="Back to StayHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- THREE-COLUMN LAYOUT -->
+  <div class="chat-body">
+
+    <!-- LEFT: ROOM LIST -->
+    <aside class="rooms-sidebar" id="roomsSidebar">
+      <div class="rooms-sidebar-header">
+        <div class="rooms-sidebar-title">Hobby Rooms</div>
+        <button class="sidebar-toggle-mobile" id="sidebarToggle">✕</button>
+      </div>
+      <div class="rooms-list" id="roomsList">
+        <!-- filled by JS -->
+      </div>
+      <div class="rooms-sidebar-footer">
+        <div class="user-status">
+          <div class="user-avatar-sm" id="footerAvatar">?</div>
+          <div>
+            <div class="user-status-name" id="footerName">Loading...</div>
+            <div class="user-status-tag">VIT Pune Student</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CENTER: CHAT AREA -->
+    <main class="chat-main">
+      <!-- Empty state -->
+      <div class="chat-empty" id="chatEmpty">
+        <div class="chat-empty-icon">⚡</div>
+        <h3>Pick a room to start chatting</h3>
+        <p>Join fellow students in hobby-specific chat rooms.<br>Plan events, find teammates, make friends.</p>
+      </div>
+
+      <!-- Messages area -->
+      <div class="messages-area hidden" id="messagesArea">
+        <div class="messages-list" id="messagesList"></div>
+        <div class="typing-indicator hidden" id="typingIndicator">
+          <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
+          <span class="typing-text" id="typingText"></span>
+        </div>
+      </div>
+
+      <!-- Input bar -->
+      <div class="chat-input-bar hidden" id="chatInputBar">
+        <button class="plan-btn" id="planBtn" title="Post a plan/event">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </button>
+        <input type="text" class="chat-input" id="chatInput" placeholder="Message the room..." maxlength="500" autocomplete="off">
+        <button class="emoji-btn" id="emojiPickerBtn" title="Emoji">😊</button>
+        <button class="send-btn" id="sendBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </main>
+
+    <!-- RIGHT: ONLINE PANEL + DM -->
+    <aside class="right-panel" id="rightPanel">
+      <!-- Online members -->
+      <div class="online-panel" id="onlinePanel">
+        <div class="panel-title">In this room</div>
+        <div class="online-list" id="onlineList">
+          <div class="online-empty">No one here yet</div>
+        </div>
+      </div>
+
+      <!-- DM Panel (overlay) -->
+      <div class="dm-panel hidden" id="dmPanel">
+        <div class="panel-title">
+          Direct Messages
+          <button class="dm-close-btn" id="dmCloseBtn">✕</button>
+        </div>
+
+        <!-- DM: user list view -->
+        <div id="dmUserList">
+          <div class="dm-search-wrap">
+            <input type="text" class="dm-search" id="dmSearch" placeholder="Search students...">
+          </div>
+          <div class="dm-users" id="dmUsers">
+            <div class="online-empty">No students online</div>
+          </div>
+        </div>
+
+        <!-- DM: conversation view -->
+        <div class="dm-convo hidden" id="dmConvo">
+          <div class="dm-convo-header">
+            <button class="dm-back-btn" id="dmBackBtn">←</button>
+            <div class="dm-convo-avatar" id="dmConvoAvatar">?</div>
+            <span class="dm-convo-name" id="dmConvoName">...</span>
+          </div>
+          <div class="dm-messages" id="dmMessages"></div>
+          <div class="dm-input-row">
+            <input type="text" class="chat-input" id="dmInput" placeholder="Direct message..." maxlength="300" autocomplete="off">
+            <button class="send-btn" id="dmSendBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div><!-- /chat-body -->
+
+  <!-- Mobile sidebar toggle -->
+  <button class="mobile-rooms-btn" id="mobileRoomsBtn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+
+</div><!-- /chat-app -->
+
+<!-- EMOJI PICKER (simple) -->
+<div class="emoji-picker-popup hidden" id="emojiPickerPopup">
+  <div class="ep-grid" id="epGrid"></div>
+</div>
+
+<!-- REACTION PICKER (appears near message) -->
+<div class="reaction-picker hidden" id="reactionPicker">
+  <div class="rp-emojis" id="rpEmojis"></div>
+</div>
+
+<!-- PLAN MODAL -->
+<div class="plan-modal-overlay hidden" id="planModalOverlay">
+  <div class="plan-modal">
+    <div class="plan-modal-header">
+      <h3>📅 Post a Plan</h3>
+      <button class="plan-modal-close" id="planModalClose">✕</button>
+    </div>
+    <p class="plan-modal-desc">Create a plan or event — others in this room can join you.</p>
+    <div class="plan-form">
+      <input type="text" class="ob-input" id="planTitle" placeholder="What's the plan? e.g. Football at 7pm tonight 🔥" maxlength="200">
+      <textarea class="ob-input plan-textarea" id="planDetails" placeholder="Details — location, time, how many people needed..." maxlength="400" rows="3"></textarea>
+    </div>
+    <div class="plan-modal-actions">
+      <button class="btn btn-ghost" id="planCancelBtn">Cancel</button>
+      <button class="btn btn-primary" id="planPostBtn">Post Plan 📅</button>
+    </div>
+  </div>
+</div>
+
+<!-- Socket.io CDN -->
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
